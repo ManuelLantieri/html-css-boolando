@@ -18,4 +18,21 @@
     margin-right: auto;
 }
 
+/* -------------------------
+            General
+--------------------------- */
+
+header{
+    background-color: #ff6900;
+    color: #ffffff;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height:50px
+}
  
