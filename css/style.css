@@ -76,9 +76,27 @@ header i{
 }
 
 .col img{
-    position: relative;
     width: 100%;
     cursor: pointer;
+}
+
+.front-img{
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.front-img:hover{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.back-img{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
 }
 
 /* heart */
@@ -86,6 +104,7 @@ header i{
 .heart{
     background-color: #ffffff;
     position: absolute;
+    z-index: 3;
     top: 10px;
     right: 0;
     padding: 9px 10px;
@@ -101,6 +120,7 @@ header i{
     display: flex;
     gap: 5px;
     position: absolute;
+    z-index: 3;
     left: 0;
     bottom: 40px;
     
