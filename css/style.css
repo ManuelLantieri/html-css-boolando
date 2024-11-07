@@ -20,7 +20,7 @@
 }
 
 /* -------------------------
-            General
+            header
 --------------------------- */
 
 header{
@@ -33,6 +33,7 @@ header .container{
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    margin-bottom: 60px;
 }
 
 .categoria a{
@@ -50,6 +51,76 @@ header .container{
 }
 
 
+/* -------------------------
+           main
+--------------------------- */
 
+.row{
+    display: flex;
+    gap: 20px;
+}
 
- 
+.col{
+    
+    width: calc(100% / 3);
+}
+
+.img-fluid{
+    position: relative;
+}
+
+.col img{
+    width: 100%;
+}
+
+/* heart */
+
+.heart{
+    background-color: #ffffff;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 9px 10px;
+}
+.heart i{
+    font-size: 20px;
+}
+
+/* colored-box */
+
+.color-box{
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    
+}
+
+.discount{
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px;
+}
+
+.sost{
+    background-color: #008000;
+    color: #ffffff;
+    font-size: 12px;
+    padding:8px
+}
+
+.cost{
+    display: flex;
+    gap: 5px;
+}
+
+.cost-red{
+    font-weight: 600;
+    color: #ff0000;
+}
+
+.cost-black{
+    text-decoration: line-through;
+}
