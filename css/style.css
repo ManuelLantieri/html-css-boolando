@@ -76,7 +76,9 @@ header i{
 }
 
 .col img{
+    position: relative;
     width: 100%;
+    cursor: pointer;
 }
 
 /* heart */
@@ -87,6 +89,7 @@ header i{
     top: 10px;
     right: 0;
     padding: 9px 10px;
+    cursor: pointer;
 }
 .heart i{
     font-size: 20px;
@@ -115,6 +118,12 @@ header i{
     color: #ffffff;
     font-size: 12px;
     padding:8px
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .cost{
@@ -176,4 +185,12 @@ footer .container{
 
 .heart:hover{
     color: #ff0000;
+}
+
+.description h3{
+    cursor: pointer;
+}
+
+.footer-left a:hover{
+    text-decoration: underline;
 }
